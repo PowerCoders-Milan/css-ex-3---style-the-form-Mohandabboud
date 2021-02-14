@@ -1,3 +1,136 @@
 <!--  Style this form accrding to the image.
       Extra points: Create your own style in
       yourstyle.html  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <title>exersice form</title>
+</head>
+<body class="Container">
+    <header>
+        <hr width="30%" size="8" align="left" color="black">
+        <h1><b>profil</b></h1>
+        <br>
+        <h2 style="font-weight: bold;"><b>Hier Konnen Sie Ihre</b></h2>
+        <br>
+        <hr size="3" color="black">
+    </header>
+    <form action="/">
+        <div>
+        <p><b>Personliche Daten</b></p>
+        <label for="titel">Titel</label>
+        <input id="titel" type="text"  placeholder="Dr.hc" class="border" required>
+        <br>
+        <br>
+        <label for="Vorname">Vorname</label>
+        <input id="Vorname" type="text"  placeholder="Peter" class="border" required>
+        <br>
+        <br>
+        <label for="Nachname">Nachname</label>
+        <input id="Nachname" type="text"  placeholder="Muster" class="border" required>
+        <br><br>
+        <br>
+        <section>
+            <span>Geschlecht</span>
+            <div class="radio-toolbar"  style="float: right;">
+            <input type="radio" name="G" id="Man" value="yes" required>
+            <label for="Man">M</label>
+            <input type="radio" name="G" id="Woman" value="yes">
+            <label for="Woman">W</label>
+            </div>
+        </section>
+        <br><br><br><br>
+        <section>
+            <span>Sprache</span>
+            <br><br><br>
+            <div class="radio-toolbar2"  style=float:right;>
+            <input type="radio" name="Language" id="IT" value="yes" required>
+            <label for="IT">IT</label>
+            <input type="radio" name="Language" id="DE" value="yes">
+            <label for="DE">DE</label>
+            <input type="radio" name="Language" id="FR" value="yes">
+            <label for="FR">FR</label>
+            </div>
+        </section>
+        </div>
+        <br><br><br><br><br>
+        <hr size="3" color="black">
+        <div>
+            <p><b>kontaktdaten</b></p>
+            <br>
+            <label for="Telefon">Telefon</label>
+            <input id="Telefon" type="number"  placeholder="" class="border2" required>
+            <button class="close-icon" type="reset"></button>
+            <br>
+            <br>
+            <label for="Mobile">Mobile</label>
+            <input id="Mobile" type="number"  placeholder="Optional" class="border">
+            <br>
+            <br>
+            <label for="Mobile">Hauptnummer</label>
+            <input id="Mobile" type="number"  placeholder="Optional" class="border">
+            <br>
+            <br>
+            <label for="Mobile">Fax</label>
+            <input id="Mobile" type="number"  placeholder="Optional" class="border" >
+            <br>
+            <br>
+            <label for="Mail">Mail1</label>
+            <input id="Mail" type="email"  placeholder="" class="border2" required>
+            <button class="close-icon" type="reset"></button>
+            <br>
+            <br>
+            <label for="Mail">Mail2</label>
+            <input id="Mail" type="email"  placeholder="Optional" class="border" >
+            <br>
+            <br>
+        </div>
+        <hr size="3" color="black">
+        <div>
+            <p><b>Adressdaten<b></p>
+            <br>
+            <label for="Frima">Frima</label>
+            <input id="Frima" type="text"  placeholder="" class="border2" required>
+            <button class="close-icon" type="reset"></button>
+            <br>
+            <br>
+            <label for="Frima">zusatz firma</label>
+            <input id="Frima" type="text"  placeholder="Optional" class="border">
+            <br>
+            <br>
+            <label for="Homepage">Homepage</label>
+            <input id="Homepage" type="text"  placeholder="Optional" class="border">
+            <br>
+            <br>
+            <label for="Adresse">Adresse/Haus Nr</label>
+            <input id="Adresse" type="number"  placeholder="33" class="border" style="width: 100px; margin-left: 1%;">
+            <input id="Adresse" type="text"  placeholder="Musterstrasse" class="border" style="width: 380px;">
+            <br>
+            <br> 
+            <label for="Adresse">Zusatz Adresse</label>
+            <input id="Adresse" type="text"  placeholder="Optional" class="border" >
+            <br>
+            <br> 
+            <label for="Postfach">Postfach</label>
+            <input id="Postfach" type="text"  placeholder="Optional" class="border">
+            <br>
+            <br> 
+            <label for="Adresse">PLZ/Ort</label>
+            <input id="Adresse" type="text"  placeholder="Musterstadt" class="border" style="width: 380px; margin-left: 1%;">
+            <input id="Adresse" type="number"  placeholder="8800" class="border" style="width: 100px;">
+            <br>
+            <br>
+            <label for="Adresse">Kanton/Land</label>
+            <input id="Adresse" type="text"  placeholder="Schweiz" class="border" style="width: 380px; margin-left: 1%;" >
+            <input id="Adresse" type="text"  placeholder="ZH" class="border" style="width: 100px;" >
+            <br><br><br><br>
+            <input type="submit" value="Speichern" class="last-button">
+            <br><br><br><br><br><br>
+        </div>
+    </form>
+</body>
